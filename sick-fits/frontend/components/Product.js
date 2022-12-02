@@ -7,10 +7,12 @@ import formatMoney from '../lib/formatMoney';
 export default function Product({ product }) {
   return (
     <ItemStyles>
+      {/* eslint-disable */}
       <img
         src={product.photo?.image.publicUrlTransformed}
         alt={product.photo?.altText}
       />
+      {/* eslint-enable */}
       <Title>
         <Link href={`/product/${product.id}`}>{product.name}</Link>
       </Title>
